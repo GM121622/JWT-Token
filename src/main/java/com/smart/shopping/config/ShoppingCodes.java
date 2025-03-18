@@ -1,0 +1,49 @@
+package com.smart.shopping.config;
+
+public enum ShoppingCodes {
+
+	WRONG_CREDENTIALS("TILA_010"),
+	USER_ACCOUNT_LOCKER("TILA_011"),
+	TOKEN_EXPIRED("TILA_012"),
+	ACCESS_DENIED("TILA_013"),
+	TRANSACTION_SUCCESSFUL("TILA_101"),
+    TRANSACTION_FAILED("TILA_115"),
+	UNAUTHORIZED("TILA_102"),
+	VALIDATION_EXCEPTION("TILA_103"),
+	ADDED_SUCCESSFULLY("TILA_110"),
+	UPDATED_SUCCESSFULLY("TILA_111"),
+	DUPLICATE_ENTITY("TILA_112"),
+	ENTITY_NOT_FOUND("TILA_113"),
+	INTERNAL_SERVER_ERROR("TILA_114"),
+	INVALID_USERNAME_OR_PASSWORD("TILA_110"),
+	ACCOUNT_DISABLED("TILA_111"),
+	//Email Template reading
+	TEMPLATE_VALIDATION_MESSAGE("TILA_301"),
+	PROMOCODE_VALIDATION("TILA_322"),
+	CONSTRAINT_VIOLATION("TILA_323"),
+	BAD_URL("TILA_324"),
+	INVALID_PROMOCODE("TILA_201"),
+	FUNDS_VALIDATION("TILA_320"),
+	TRANSACTION_VALIDATION("TILA_321"),
+	INVALID_INPUT("TILA_422"),
+	VALID_PROMOCODE("TILA_200"),
+	REQUEST_IN_PROGRESS("TILA_350");
+	
+
+	 
+    private String TilaCode;
+ 
+    ShoppingCodes(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	void ShoppingCodes(String tilacode) {
+        this.TilaCode = tilacode;
+    }
+ 
+    public String getShoppingCodes() {
+        return this.TilaCode;
+    }
+	
+	
+}
